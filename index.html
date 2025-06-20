@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Trace AI – Elite crypto education, live trading signals & 1-on-1 mentorship" />
-  <title>Trace AI | Crypto Mastery & Signals</title>
+  <title>Trace ASI | AI-Powered Crypto Signals & Mentorship</title>
+  <meta name="description" content="Join Trace ASI — the crypto platform for AI trading signals, live strategy sessions, and 1-on-1 mentorship. Trusted by professionals, driven by data." />
+  <meta name="keywords" content="Trace ASI, crypto education, AI trading, crypto signals, trading mentorship, crypto coaching, crypto alerts, trading strategy, market analysis" />
+  <meta name="author" content="Trace ASI" />
+
+  <meta property="og:title" content="Trace ASI | AI-Powered Crypto Signals & Mentorship" />
+  <meta property="og:description" content="AI-driven crypto education and live trade alerts. Join the platform traders trust." />
+  <meta property="og:image" content="https://traceasi.github.io/traceai-homepage/images/logo.png" />
+  <meta property="og:url" content="https://traceasi.github.io/traceai-homepage/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trace ASI | AI-Powered Crypto Signals & Mentorship" />
+  <meta name="twitter:description" content="Join Trace ASI for crypto trade alerts, coaching, and AI tools." />
+  <meta name="twitter:image" content="https://traceasi.github.io/traceai-homepage/images/logo.png" />
+
+  <link rel="canonical" href="https://traceasi.github.io/traceai-homepage/" />
+  <link rel="icon" href="images/logo.png" type="image/png">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -12,51 +28,174 @@
   <script async src="https://assets.calendly.com/assets/external/widget.js"></script>
 
   <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Inter,sans-serif;background:#f7fafe;color:#111;line-height:1.6;display:flex;flex-direction:column;min-height:100vh}
-    a{text-decoration:none;color:#2563eb}
-    img{max-width:100%;display:block}
-    header{position:fixed;top:0;left:0;right:0;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);padding:18px 5vw;display:flex;justify-content:space-between;align-items:center;z-index:1000}
-    header img{height:64px} /* Bigger logo */
-    nav a{margin-left:24px;font-weight:600;color:#374151}
-    nav a:hover{color:#111}
-    .hero{padding:140px 5vw 100px;text-align:center;background:linear-gradient(180deg,#ffffff 0%,#eaf1ff 100%)}
-    .hero h1{font-size:3rem;font-weight:900;color:#000;margin-bottom:.4em}
-    .hero p{font-size:1.2rem;color:#374151;margin-bottom:2em}
-    .btn{display:inline-block;padding:14px 34px;border-radius:30px;font-weight:700;background:#28c76f;color:#fff;transition:.25s}
-    .btn:hover{background:#20b25f}
-    .btn-outline{background:#fff;border:2px solid #28c76f;color:#28c76f}
-    .btn-outline:hover{background:#28c76f;color:#fff}
-    section{padding:80px 5vw;text-align:center}
-    h2{font-size:2rem;margin-bottom:.4em}
-    .spacer{width:70px;height:3px;background:#28c76f;margin:22px auto}
-    .grid3{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;max-width:1200px;margin:auto}
-    .card{background:#ffffff;border-radius:14px;padding:26px 22px;width:320px;box-shadow:0 4px 12px rgba(0,0,0,.05);text-align:left}
-    .card h3{font-size:1.15rem;margin:.6em 0}
-    .card span{font-size:.9rem;color:#555}
-    .icon-circle{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e3f8ed;color:#28c76f;font-size:1.3rem}
-    footer{margin-top:auto;background:#1f2937;color:#9ca3af;padding:30px 5vw;text-align:center;font-size:.9rem}
-    footer a{color:#d1d5db}
-    @media(max-width:640px){nav a{margin-left:14px};.hero h1{font-size:2.3rem}}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f7fafe; color: #111; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+    a { text-decoration: none; color: #2563eb; }
+    img { max-width: 100%; display: block; }
 
-    /* Carousel Styles */
-    .carousel { position:relative; overflow:hidden; max-width:1000px; margin:40px auto; }
-    .track { display:flex; transition:transform 0.6s ease; }
-    .slide { min-width:100%; display:flex; justify-content:center; }
-    .slide img { max-width:90%; height:auto; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
-    .prev, .next {
-      position:absolute; top:50%; transform:translateY(-50%);
-      background:#28c76f; color:#fff; width:40px; height:40px; border-radius:50%;
-      border:none; font-size:1.2rem; cursor:pointer; z-index:10;
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      padding: 18px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
     }
-    .prev { left:10px; }
-    .next { right:10px; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+    .brand span {
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: #1f2937;
+    }
+
+    nav a {
+      margin-left: 24px;
+      font-weight: 600;
+      color: #374151;
+    }
+    nav a:hover { color: #111; }
+
+    .hero {
+      padding: 140px 5vw 100px;
+      text-align: center;
+      background: linear-gradient(180deg, #ffffff 0%, #eaf1ff 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #000;
+      margin-bottom: .4em;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #374151;
+      margin-bottom: 2em;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 34px;
+      border-radius: 30px;
+      font-weight: 700;
+      background: #28c76f;
+      color: #fff;
+      transition: .25s;
+    }
+    .btn:hover { background: #20b25f; }
+
+    .btn-outline {
+      background: #fff;
+      border: 2px solid #28c76f;
+      color: #28c76f;
+    }
+    .btn-outline:hover {
+      background: #28c76f;
+      color: #fff;
+    }
+
+    section { padding: 80px 5vw; text-align: center; }
+    h2 { font-size: 2rem; margin-bottom: .4em; }
+    .spacer {
+      width: 70px;
+      height: 3px;
+      background: #28c76f;
+      margin: 22px auto;
+    }
+
+    .grid3 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 26px 22px;
+      width: 320px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.05);
+      text-align: left;
+    }
+    .card h3 { font-size: 1.15rem; margin: .6em 0; }
+    .card span { font-size: .9rem; color: #555; }
+
+    .icon-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e3f8ed;
+      color: #28c76f;
+      font-size: 1.3rem;
+    }
+
+    footer {
+      margin-top: auto;
+      background: #1f2937;
+      color: #9ca3af;
+      padding: 30px 5vw;
+      text-align: center;
+      font-size: .9rem;
+    }
+    footer a { color: #d1d5db; }
+
+    @media(max-width:640px) {
+      nav a { margin-left: 14px; }
+      .hero h1 { font-size: 2.3rem; }
+    }
+
+    .carousel { position: relative; overflow: hidden; max-width: 1000px; margin: 40px auto; }
+    .track { display: flex; transition: transform 0.6s ease; }
+    .slide { min-width: 100%; display: flex; justify-content: center; }
+    .slide img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #28c76f;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
   </style>
 </head>
 <body>
 
 <header>
-  <a href="#"><img src="images/logo.png" alt="Trace AI logo"></a>
+  <div class="brand">
+    <img src="images/logo.png" alt="Trace ASI Logo">
+    <span>Trace ASI</span>
+  </div>
   <nav>
     <a href="#about">About</a>
     <a href="#membership">Membership</a>
@@ -68,18 +207,16 @@
 </header>
 
 <section class="hero">
-  <h1>The Future is Now</h1>
-  <p>Learn, trade, and thrive with institutional-grade tools, AI-powered insight, and hands-on mentorship.</p>
+  <h1>Welcome to Trace ASI</h1>
+  <p>AI-driven trading tools. Professional mentorship. Proven results.</p>
   <a href="#" class="btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/your-schedule/30min'});return false;">Book Free Strategy Call</a>
 </section>
 
 <section id="about">
-  <h2>What We Do</h2>
+  <h2>About Trace ASI</h2>
   <div class="spacer"></div>
   <p style="max-width:740px;margin:auto">
-    Trace AI delivers elite crypto education, real-time trading signals, and tailored one-on-one mentorship.
-    Our proprietary AI engines scan market flow, sentiment, and liquidity 24/7 — empowering members to capture
-    asymmetric opportunities with confidence.
+    Trace ASI is a premium crypto education and analytics platform. We deliver elite trading signals, AI-driven market analysis, and personal mentorship to help everyday traders operate like professionals.
   </p>
 </section>
 
@@ -90,26 +227,24 @@
     <div class="card">
       <div class="icon-circle"><i class="fa-solid fa-bolt"></i></div>
       <h3>AI-Powered Alerts</h3>
-      <span>High-conviction trade signals via SMS & email, generated by machine-learning models trained on years of
-            order-flow and liquidity data.</span>
+      <span>Real-time trade signals via SMS & email powered by AI models trained on live market flow.</span>
     </div>
     <div class="card">
       <div class="icon-circle"><i class="fa-solid fa-user-tie"></i></div>
       <h3>1-on-1 Mentorship</h3>
-      <span>Weekly Zoom calls with seasoned analysts who review your trades, refine your strategy, and hold you accountable.</span>
+      <span>Weekly strategy calls with analysts to plan your setups and grow your account.</span>
     </div>
     <div class="card">
       <div class="icon-circle"><i class="fa-solid fa-chalkboard-user"></i></div>
-      <h3>Live Strategy Sessions</h3>
-      <span>Interactive market briefings each week to break down macro trends, chart setups, and trade management in real time.</span>
+      <h3>Live Sessions</h3>
+      <span>Interactive live Zoom calls covering technical setups, trends, and education.</span>
     </div>
   </div>
 </section>
 
 <section id="reviews">
-  <h2>Member Feedback</h2>
+  <h2>Member Reviews</h2>
   <div class="spacer"></div>
-
   <div class="carousel">
     <div class="track" id="track">
       <div class="slide"><img src="images/review1.png" alt="Review 1"></div>
@@ -123,53 +258,48 @@
 </section>
 
 <section id="press">
-  <h2>Around the Web</h2>
+  <h2>Trace ASI in the Media</h2>
   <div class="spacer"></div>
   <div class="grid3" style="gap:24px">
     <a class="card" href="https://www.marketwatch.com/press-release/from-private-equity-to-public-trace-asi-s-ai-for-crypto-hits-87-percent-success-rate-6cab41ea" target="_blank">
       <img src="images/marketwatch.png" alt="MarketWatch">
       <h3>MarketWatch</h3>
-      <span>Trace ASI’s AI Hits 87 % Success Rate in Public Rollout</span>
+      <span>Trace ASI’s AI Hits 87% Success Rate in Public Rollout</span>
     </a>
     <a class="card" href="https://www.benzinga.com/content/45711322/trace-asi-there-is-still-time-to-make-cryptopia" target="_blank">
       <img src="images/benzinga.png" alt="Benzinga">
       <h3>Benzinga</h3>
-      <span>“There Is Still Time to Make Cryptopia” — A Deep Dive on Trace ASI</span>
+      <span>“There Is Still Time to Make Cryptopia” — Trace ASI featured in Benzinga</span>
     </a>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Ready to Join?</h2>
+  <h2>Ready to Join Trace ASI?</h2>
   <div class="spacer"></div>
   <a href="#" class="btn" onclick="Calendly.initPopupWidget({url:'https://calendly.com/your-schedule/30min'});return false;">Book Your Call</a>
 </section>
 
 <footer>
-  © 2025 Trace ASI · <a href="mailto:support@traceasi.com">support@traceasi.com</a>
+  &copy; 2025 Trace ASI · <a href="mailto:support@traceasi.com">support@traceasi.com</a>
 </footer>
 
 <script>
   const track = document.getElementById('track');
   const slides = document.querySelectorAll('.slide');
   let index = 0;
-
   function updateSlide() {
     track.style.transform = `translateX(-${index * 100}%)`;
   }
-
   function slide(dir) {
     index = (index + dir + slides.length) % slides.length;
     updateSlide();
   }
-
   setInterval(() => slide(1), 5000);
-
   document.querySelectorAll('a[href=\"#login\"]').forEach(el=>{
-    el.addEventListener('click',()=>window.location.href='https://app.traceasi.com/login');
+    el.addEventListener('click',()=>window.location.href='https://app.traceasi.com/auth/login');
   });
 </script>
 
 </body>
 </html>
-
